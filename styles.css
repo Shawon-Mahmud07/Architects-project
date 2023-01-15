@@ -1,8 +1,131 @@
-:root {
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
+}
+
+/* ============header section style=========== */
+.header-section {
+  width: 100%;
+  height: auto;
+  background: rgba(255, 144, 14, 0.1);
+}
+.navbar {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.navbar-title {
+  height: 53px;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-size: 35px;
+  color: #131313;
+}
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+.navbar-links ul li a {
+  font-family: "Work Sans";
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #424242;
+}
+
+.header-banner {
+  width: 80%;
+  margin: 0 auto;
+}
+.text-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+.text-details {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner-title h1 {
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  color: #131313;
+}
+.banner-title {
+  margin-bottom: 30px;
+}
+.banner-description {
+  font-family: "Work Sans";
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  margin-bottom: 30px;
+}
+.btn-primary {
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  padding: 18px 20px;
+  border: none;
+  background: #ff900e;
+  border-radius: 8px;
+}
+.img-section {
+  width: 80%;
+  height: auto;
+  margin: 40px auto;
+}
+.img-section img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* responsive mobile device */
+/*  */
+
+/* ============header section=============== */
+@media only screen and (max-width: 576px) {
+  .header-banner {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navbar-title {
+    margin-left: 20px;
+    height: 110px;
+    font-size: 30px;
+  }
+  .navbar-links ul {
+    flex-direction: column;
+    gap: 10px;
+    height: 140px;
+  }
+  .text-container {
+    width: 100vw;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .banner-title h1 {
+    font-size: 35px;
+  }
+  .text-details {
+    text-align: start;
+    margin: 0;
+    width: 100%;
+  }
+  .img-section {
+    width: 92%;
+  }
 }
