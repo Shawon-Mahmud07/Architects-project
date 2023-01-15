@@ -156,6 +156,89 @@
   color: #727272;
 }
 
+/* ================Experience-section============ */
+.Experience-section {
+  width: 100%;
+  margin-top: 80px;
+}
+.Experience-container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+}
+.Experience-sub-container {
+}
+.Experience-title {
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 43px;
+  color: #131313;
+  border-left: 4px solid #ff900e;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.Experience-details,
+.details-more-text {
+  font-family: "Work Sans";
+  line-height: 20px;
+  color: #727272;
+  margin-bottom: 20px;
+}
+.Experience-details-container {
+  width: 60%;
+}
+.Experience-details-more {
+  width: 586px;
+  height: 125px;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.Experience-details-more h4 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 18px;
+  color: #131313;
+  margin-bottom: 8px;
+}
+
+.img-container {
+  width: 100%;
+  position: relative;
+}
+.architect-img img {
+  width: 100%;
+  height: auto;
+}
+.btn-success {
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  padding: 48px 17px;
+  border: none;
+  background: #ff900e;
+  border-radius: 8px;
+  width: 200px;
+  height: 120px;
+  text-align: center;
+  position: absolute;
+  bottom: 27px;
+  right: 289px;
+}
+.span-text {
+  font-weight: 700;
+  font-size: 45px;
+}
+
 /* responsive mobile device */
 /*  */
 
@@ -167,6 +250,7 @@
   .header-banner {
     width: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
   }
   .navbar {
     width: 100%;
@@ -228,5 +312,37 @@
   }
   .features-title {
     margin: auto;
+  }
+
+  /* ================Experience-section============ */
+  .Experience-section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Experience-container {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -66px;
+  }
+  .Experience-details-more {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .Experience-details-container {
+    width: 100%;
+  }
+  .btn-success {
+    bottom: -35px;
+    right: 299px;
   }
 }
