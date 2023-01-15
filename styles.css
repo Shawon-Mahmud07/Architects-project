@@ -96,8 +96,12 @@
 
 /* ============header section=============== */
 @media only screen and (max-width: 576px) {
+  .header-section {
+    padding-right: 13px;
+  }
   .header-banner {
     width: 100%;
+    margin: 0 auto;
   }
   .navbar {
     width: 100%;
@@ -123,7 +127,7 @@
   .text-details {
     text-align: start;
     margin: 0;
-    width: 100%;
+    width: 95%;
   }
   .img-section {
     width: 92%;
