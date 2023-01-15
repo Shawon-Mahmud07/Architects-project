@@ -5,6 +5,10 @@
   /* border: 1px solid red; */
 }
 
+.hide {
+  display: none;
+}
+
 /* ============header section style=========== */
 .header-section {
   width: 100%;
@@ -91,11 +95,72 @@
   object-fit: cover;
 }
 
+/* =============main section style=============== */
+
+/* =========Features section=========== */
+.Features-container {
+  width: 100%;
+  height: 100vh;
+}
+.Features-sub-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding-left: 65px;
+}
+.Features-gallery {
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.Features-gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.features-details {
+  width: 38%;
+  height: 270px;
+}
+.features-title {
+  width: 358px;
+  margin-bottom: 20px;
+}
+.first-span {
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-size: 35px;
+  color: #727272;
+}
+.second-span {
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-size: 35px;
+  color: #131313;
+}
+.third-span {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  color: #ff900e;
+}
+.features-description {
+  margin-bottom: 20px;
+  font-family: "Work Sans";
+  line-height: 20px;
+  color: #727272;
+}
+
 /* responsive mobile device */
 /*  */
 
-/* ============header section=============== */
 @media only screen and (max-width: 576px) {
+  /* ============header section=============== */
   .header-section {
     padding-right: 13px;
   }
@@ -130,6 +195,38 @@
     width: 95%;
   }
   .img-section {
-    width: 92%;
+    width: 91%;
+  }
+
+  /* =============main section responsive============= */
+
+  /* =========Features section=========== */
+  .Features-container {
+    width: 100%;
+    height: auto;
+  }
+  .Features-sub-container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 35px;
+    padding-left: 20px;
+  }
+  .Features-gallery {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    margin-left: 49px;
+  }
+  .features-details {
+    width: 95%;
+    text-align: center;
+    height: 273px;
+  }
+  .features-title {
+    margin: auto;
   }
 }
