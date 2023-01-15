@@ -269,7 +269,7 @@
   align-items: center;
 }
 .box {
-  width: 200px;
+  width: 150px;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -282,6 +282,88 @@
 
 .box:hover {
   transform: rotatey(150deg);
+}
+
+/* ===========community section============== */
+.community-section {
+  width: 100%;
+  margin-top: 50px;
+}
+.community-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.community-detail {
+}
+.community-img {
+  width: 100%;
+}
+.community-img img {
+  width: 100%;
+}
+/* ========sponsors section==========  */
+.sponsorss-section {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.sponsorss-containe {
+  width: 80%;
+  margin: 0 auto;
+}
+.sponsors-sub-container {
+}
+.sponsors-title {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 43px;
+  color: #131313;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.sponsors-description {
+  font-family: "Work Sans";
+  line-height: 26px;
+  text-align: center;
+  color: #727272;
+}
+.sponsors-details {
+  margin-bottom: 30px;
+}
+.sponsors-img {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.sponsors-img img {
+  width: 80%;
+}
+
+/* ==========footer-section section=========== */
+.footer-section {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.footer-details {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  background: #fff4e7;
+  border-radius: 8px;
+}
+.footer-details p {
+  padding: 20px;
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #424242;
 }
 
 /* responsive mobile device */
@@ -406,5 +488,25 @@
   }
   .box {
     margin-top: 17px;
+  }
+
+  /* ========sponsors section========== */
+  .sponsors-img {
+    width: 30%;
+    gap: 15px;
+    margin: auto;
+    align-content: center;
+    flex-direction: column;
+  }
+
+
+.community-container {
+    width: 90%;
+    flex-direction: column;
+
+
+  /* ==========footer-section section=========== */
+  .footer-details {
+    width: 100%;
   }
 }
